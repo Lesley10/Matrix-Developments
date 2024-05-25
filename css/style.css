@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Freeman';
+ 
   
     
 }
@@ -10,6 +11,7 @@ body{
     background-image: url(../img/g2.jfif);
     background-size: cover;
     background-position: right;
+    
 }
 .freeman-regular {
     font-family: "Freeman", sans-serif;
@@ -351,12 +353,21 @@ footer p:nth-child(2){
 }
 
 @media only screen and (max-width: 750px){
-    body{
-       
-        padding: 0;
-        margin: 0;
+
+    *{
         box-sizing: border-box;
         overflow-x: hidden;
+        
+        
+    }
+    body{
+    background-image: url(../img/g2.jfif);
+    background-size: cover;
+   background-position: right;
+    background-repeat: no-repeat;
+    width:100%;
+    
+        
     }
 
     nav{
@@ -367,7 +378,7 @@ footer p:nth-child(2){
 
     .hero{
         height: 80vh;
-        width: 100%;
+        
         
     }
 
@@ -440,7 +451,7 @@ footer p:nth-child(2){
     
     .main{
         width: 1130px;
-        max-width: 50%;
+        max-width: 100%;
         margin: 0 0 0 10px;
         display: block;
         padding: 0 0 0 20px;
@@ -489,6 +500,136 @@ footer p:nth-child(2){
     button:hover{
         background-color: transparent;
         border: 2px solid  rgb(43, 153, 16);
+    }
+
+    .service{
+        width: 100%;
+        padding: 60px 0;
+        color: honeydew;
+    }
+    
+    .title h2{
+        font-size: 75px;
+        width: 1130px;
+        margin: 30px 0 0 500px;
+        display: inline-block;
+        color:   rgb(43, 153, 16);
+        
+    }
+    
+    .box{
+        display: block;
+       
+        align-items: center;
+        min-height: 400px;
+    }
+    
+    .card{
+        height: 365px;
+        width: 335px;
+        background: #191919;
+        padding: 20px ;
+        border-radius: 20px;
+        margin: 15px 0 0 55px;
+
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .card i{
+        font-size: 50px;
+        display: block;
+        text-align: center;
+        margin: 25px 0;
+        color:   rgb(43, 153, 16);
+    }
+    
+    h5{
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+    
+    .pra p{
+        color: honeydew;
+        font-size: 16px;
+        line-height: 27px;
+        margin-bottom: 25px;
+    }
+    
+    .card .button{
+        background-color:  rgb(43, 153, 16);
+        color: honeydew;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 9px 22px;
+        border-radius: 30px;
+        transition: .4s;
+        font-size: 18px;
+    }
+    
+    .card .button:hover{
+        background-color: transparent;
+        border: 2px solid  rgb(43, 153, 16);
+        cursor: pointer;
+        transition-delay: .15s;
+    }
+
+    footer{
+        position: relative;
+        width: 100%;
+        display: flex;
+        height: 400px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: honeydew;
+    }
+    
+    footer p:nth-child(1){
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+    footer p:nth-child(2){
+        font-size: 17px;
+        width: 400px;
+        text-align: center;
+        line-height: 26px;
+        letter-spacing: 1.5px;
+    }
+    
+    .social{
+        display: flex;
+    }
+    
+    .social a{
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(43, 153, 16);
+        border-radius: 50%;
+        margin: 22px 10px;
+        color: honeydew;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    .social a:hover{
+        transform: scale(1.3);
+        transition: .3s;
+    }
+    
+    .end{
+        position: absolute;
+        color:  rgb(43, 153, 16);
+        bottom: 35px;
+        font-size: 14px;
+        padding: 20px;
     }
     
 }
