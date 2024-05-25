@@ -352,9 +352,11 @@ footer p:nth-child(2){
 
 @media only screen and (max-width: 750px){
     body{
-        width: 90%;
+       
         padding: 0;
         margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     nav{
